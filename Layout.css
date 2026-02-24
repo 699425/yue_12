@@ -18,7 +18,7 @@ body {
   position: relative;
   display: table;
   width: 100%;
-  height: 500px;
+  height: 20px;
   margin-bottom: 6rem;
   background-size: cover;
 }
@@ -140,3 +140,21 @@ li a:hover {
   color: #e96a64ff;
 }
 /*^ hover effect for the links in the navigation menu*/
+
+.page_name {
+  display:block;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #131313;
+}
+
+.content1{
+  display:block;
+  margin: 5vw;
+}
+/*^ setting for the content*/
+
+.body1 {
+  display: block;
+  margin: 2vw;
+}
