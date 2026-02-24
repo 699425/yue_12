@@ -25,15 +25,11 @@ body {
 
 .header-container{
   position:fixed;
-  z-index: 100;
+  z-index: 100; /*keep header on top of other elements*/
   width: 100%;
   background: #e9e4dbff;
 }
 
-div {
-  display: block;
-  unicode-bidi: isolate;
-}
 
 @media screen and (max-width: 1000px) {
   ul.title li a {
@@ -44,7 +40,7 @@ div {
     display: block;
   }
 }
-
+/*^ header for larger screen*/
 
 @media screen and (max-width: 600px) {
   .header-container {
@@ -62,32 +58,34 @@ div {
     display: none !important;
   }
 }
+/*^ header for smaller screen*/
 
 .header-container .logo {
   left: -20px;
   right: 0;
 }
+/*^ placement for logo, but logo not showing up*/
 
 .header-container ul{
   text-align: center;
   padding: 0rem;
   margin: 0rem;
-  list-style-type: none;
 }
+/*^ header ul list, to make the list horizontal and remove default padding and margin*/
 
 .header-container ul li{
   display:inline-block;
   padding: 10px;
 }
+/*^ header ul list items, to make the list items horizontal and add padding*/
 
-.header-container ul li.logo{
-  float: left;
-}
 
 .logo {
+  float: left;
   width: 5px;
   height: 5px;
 }
+/*^ make the logo float to the left and set size*/
 
 .homepage{
   font-size: 2rem;
@@ -95,9 +93,10 @@ div {
   text-transform: uppercase;
   padding: 5px;
   align-items: center;
-  left: 0px;
+  left: 0;
   right: 0;
 }
+/*^ setting for site title*/
 
 .about-page{
   position: fixed;
@@ -114,6 +113,7 @@ div {
   background-color: #e9e4dbff;
   border-bottom: 1px solid #131313;
 }
+/* overall setting for the two about pages*/
 
 .about_cz, .about_as {
   align-items: center;
@@ -123,16 +123,20 @@ div {
   font-size: 1rem;
   display: inline-block;
 }
+/*setting for the links and type setting for the Navigation menu*/
 
 .header-container ul a {
   text-decoration: none;
 }
+/*^ remove underline from links*/
 
 a:webkit-any-link {
   cursor: pointer;
 }
+/*^ make the cursor a pointer when hovering over links*/
 
 li a:hover {
   background-color: #e9e4dbff;
   color: #e96a64ff;
 }
+/*^ hover effect for the links in the navigation menu*/
