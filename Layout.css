@@ -14,11 +14,12 @@ body {
   line-height: 1.6;
 }
 
+
 .site-head {
   position: relative;
   display: table;
   width: 100%;
-  height: 20px;
+  height: 10px;
   margin-bottom: 6rem;
   background-size: cover;
 }
@@ -28,31 +29,15 @@ body {
   z-index: 100; /*keep header on top of other elements*/
   width: 100%;
   background: #e9e4dbff;
+  
 }
 
 
-@media screen and (max-width: 1000px) {
-  ul.title li a {
-    text-align: center;
-    float: none;
-  }
-  .logo {
-    display: block;
-  }
-}
-/*^ header for larger screen*/
-
-@media screen and (max-width: 600px) {
-  .header-container {
-    background-image: none;
-  }
-  ul.title li a {
-    text-align: center;
-    float: none;
-  }
-  .about_as, .about_cz {
-    width: 100%;
-    margin: 0;
+@media screen and (max-width: 800px) {
+  .about_page .about_as, .about_cz {
+    align-items: center;
+    margin: 0 20vw;
+    display: inline-block;
   }
   .logo {
     display: none !important;
@@ -60,30 +45,18 @@ body {
 }
 /*^ header for smaller screen*/
 
-.header-container .logo {
-  left: -20px;
-  right: 0;
-}
-/*^ placement for logo, but logo not showing up*/
 
-.header-container ul{
+.site-head ul{
+  display: block;
+  padding: 10px;
   text-align: center;
-  padding: 0rem;
-  margin: 0rem;
+  width: 100%;
 }
 /*^ header ul list, to make the list horizontal and remove default padding and margin*/
-
-.header-container ul li{
-  display:inline-block;
-  padding: 10px;
-}
-/*^ header ul list items, to make the list items horizontal and add padding*/
 
 
 .logo {
   float: left;
-  width: 5px;
-  height: 5px;
 }
 /*^ make the logo float to the left and set size*/
 
@@ -91,37 +64,23 @@ body {
   font-size: 2rem;
   color: #131313;
   text-transform: uppercase;
-  padding: 5px;
-  align-items: center;
-  left: 0;
-  right: 0;
 }
 /*^ setting for site title*/
 
 .about-page{
-  position: fixed;
-  padding: 5px;
+  margin-top: 5px;
   letter-spacing: 1px;
   font-family: 'lobster', cursive;
-  font-size: 0px;
-  top: 50px;
   width: 100%;
-  margin: auto;
-  align-items: center;
-  left: 0;
-  right: 0;
-  background-color: #e9e4dbff;
-  border-bottom: 1px solid #131313;
 }
 /* overall setting for the two about pages*/
 
 .about_cz, .about_as {
-  align-items: center;
-  margin: 0 10vw;
-  padding: 5px 10px;
+  display: inline-block;
+  padding-bottom: 10px;
   color: #131313;
   font-size: 1rem;
-  display: inline-block;
+  padding: 0 10vw;
 }
 /*setting for the links and type setting for the Navigation menu*/
 
@@ -136,7 +95,7 @@ a:webkit-any-link {
 /*^ make the cursor a pointer when hovering over links*/
 
 li a:hover {
-  background-color: #e9e4dbff;
+  background-color: transparent;
   color: #e96a64ff;
 }
 /*^ hover effect for the links in the navigation menu*/
@@ -144,17 +103,27 @@ li a:hover {
 .page_name {
   display:block;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 22px;
   color: #131313;
+  margin-top: 8vw;
+  padding-top: 4vw;
 }
 
-.content1{
+.content{
   display:block;
-  margin: 5vw;
+  margin: 2vw;
+}
+
+.content h2{
+  font-size: 22px;
+  margin-top: 4vw;
 }
 /*^ setting for the content*/
 
-.body1 {
-  display: block;
-  margin: 2vw;
+.content1 h2{
+  margin-top: 2vw;
+}
+
+.content p {
+  font-size: 16px;
 }
