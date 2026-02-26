@@ -105,8 +105,9 @@ li a:hover {
 .page_name {
   display: block;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   color: #131313;
+  margin-bottom: 2vw;
 }
 
 .content{
@@ -114,14 +115,10 @@ li a:hover {
 }
 
 .content h2{
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 4vw;
 }
 /*^ setting for the content*/
-
-.content1 h2{
-  margin-top: 2vw;
-}
 
 .content p {
   font-size: 16px;
